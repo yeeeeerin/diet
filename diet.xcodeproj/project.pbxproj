@@ -21,6 +21,7 @@
 		9F21D8091FCBC5150053F6E9 /* salade.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F21D8051FCBC5150053F6E9 /* salade.png */; };
 		9F21D80A1FCBC5150053F6E9 /* sidedish.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F21D8061FCBC5150053F6E9 /* sidedish.png */; };
 		9F21D80B1FCBC5150053F6E9 /* soup.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F21D8071FCBC5150053F6E9 /* soup.png */; };
+		9F46DF301FE80E1A003C357C /* health.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9F46DF2F1FE80E1A003C357C /* health.jpeg */; };
 		9FF39BAC1FD4E41400F946A0 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF39BAB1FD4E41400F946A0 /* MenuCell.swift */; };
 		9FF39BAE1FD4F88D00F946A0 /* y1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FF39BAD1FD4F88D00F946A0 /* y1.png */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		9F21D8051FCBC5150053F6E9 /* salade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = salade.png; path = img/salade.png; sourceTree = "<group>"; };
 		9F21D8061FCBC5150053F6E9 /* sidedish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sidedish.png; path = img/sidedish.png; sourceTree = "<group>"; };
 		9F21D8071FCBC5150053F6E9 /* soup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = soup.png; path = img/soup.png; sourceTree = "<group>"; };
+		9F46DF2F1FE80E1A003C357C /* health.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = health.jpeg; path = img/health.jpeg; sourceTree = "<group>"; };
 		9FF39BAB1FD4E41400F946A0 /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		9FF39BAD1FD4F88D00F946A0 /* y1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = y1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,7 @@
 		9F21D7FB1FCBC49E0053F6E9 /* img */ = {
 			isa = PBXGroup;
 			children = (
+				9F46DF2F1FE80E1A003C357C /* health.jpeg */,
 				9F21D8041FCBC5150053F6E9 /* dessert.png */,
 				9F21D8051FCBC5150053F6E9 /* salade.png */,
 				9F21D8061FCBC5150053F6E9 /* sidedish.png */,
@@ -168,6 +171,7 @@
 				9F21D80B1FCBC5150053F6E9 /* soup.png in Resources */,
 				9F21D7E61FCB9CFC0053F6E9 /* LaunchScreen.storyboard in Resources */,
 				9FF39BAE1FD4F88D00F946A0 /* y1.png in Resources */,
+				9F46DF301FE80E1A003C357C /* health.jpeg in Resources */,
 				9F21D80A1FCBC5150053F6E9 /* sidedish.png in Resources */,
 				9F21D7E31FCB9CFC0053F6E9 /* Assets.xcassets in Resources */,
 				9F21D7DE1FCB9CFC0053F6E9 /* Main.storyboard in Resources */,

@@ -26,27 +26,26 @@ class RecipyListTableViewController: UITableViewController {
     func addMenu(){
         if seg_kind_of == "반찬"{
             menu = [("취나물 무침",56),
-                    ("ㅗㅗ",600),
-                    ("ggg",800),
-                    ("ggg",200)]
+                    ("미나리 나물",76),
+                    ("계란 장조림",100),
+                    ("파래 무침",41)]
         }
         if seg_kind_of == "샐러드"{
-            menu = [("샐러드",56),
-                    ("ㅇㅇ",600),
-                    ("gㄹㄹg",800),
-                    ("ggg",200)]
+            menu = [("단호박 샐러드",346),
+                    ("야채 샐러드",206),
+                    ("닭가슴살 샐러드",289),
+                    ("연어샐러드",323)]
         }
         if seg_kind_of == "국"{
-            menu = [("북억구",56),
-                    ("ㄴㅇㄹ",600),
-                    ("gㄴㅇㄹㅁ",800),
-                    ("ggg",200)]
+            menu = [("북어국",67),
+                    ("계란국",54),
+                    ("미역국",55),
+                    ("콩나물국",40)]
         }
         if seg_kind_of == "디저트" {
-            menu = [("디졑",56),
-                    ("ㄴㅇㄹㄴ",600),
-                    ("ㅁㄴㅇㄹㅁ",800),
-                    ("gㅇㅇ",200)]
+            menu = [("노슈가 고구마빵",120),
+                    ("저탄수 땅콩버터빵",140),
+                    ("단백질빵",60)]
             
         }
     }
@@ -122,7 +121,7 @@ class RecipyListTableViewController: UITableViewController {
                     
                     destination.detailRecipe = menu[selectedIndex]
                     destination.title = menu[selectedIndex].title
-                    
+                    destination.kindOf = seg_kind_of
                     
                 }
             }
