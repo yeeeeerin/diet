@@ -63,6 +63,10 @@ class FavoriteTableViewController: UITableViewController {
         if let kcalLabel = recipy.value(forKey: "kcal") as? Int{
             cell.menu_kcal.text = String(kcalLabel) + "kcal"
         }
+        if let imgLabel = recipy.value(forKey: "img") as? String{
+            let image = UIImage(named: imgLabel)
+            cell.menu_img.image = image
+        }
         return cell
     }
     
@@ -126,8 +130,8 @@ class FavoriteTableViewController: UITableViewController {
                 if let selectedIndex = self.tableView.indexPathsForSelectedRows?.first?.row {
                     
                     //title과 칼로리 종류 정보를 RecipeViewController에 보낸다
-                    typealias cellform = (title:String, kcal:Int)
-                    var detailRecipe:cellform = ("0",0)
+                    typealias cellform = (title:String, kcal:Int,img:String)
+                    var detailRecipe:cellform = ("0",0,"")
                     
                     let recipy = menu[selectedIndex]
                     
@@ -137,6 +141,9 @@ class FavoriteTableViewController: UITableViewController {
                     }
                     if let kcalLabel = recipy.value(forKey: "kcal") as? Int{
                         detailRecipe.kcal = kcalLabel
+                    }
+                    if let imgLabel = recipy.value(forKey: "img") as? String{
+                        detailRecipe.img = imgLabel
                     }
                     if let kindLabel = recipy.value(forKey: "kind") as? String{
                         destination.kindOf = kindLabel

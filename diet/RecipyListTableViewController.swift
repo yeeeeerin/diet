@@ -11,7 +11,7 @@ import UIKit
 class RecipyListTableViewController: UITableViewController {
     
     //음식 이름 : 칼로리
-    typealias cellform = (title:String, kcal:Int)
+    typealias cellform = (title:String, kcal:Int,img:String)
     var menu:[cellform] = [];
     
     var seg_kind_of:String = "" // MainViewController에서 받은 분류값
@@ -25,27 +25,27 @@ class RecipyListTableViewController: UITableViewController {
     
     func addMenu(){
         if seg_kind_of == "반찬"{
-            menu = [("취나물 무침",56),
-                    ("미나리 나물",76),
-                    ("계란 장조림",100),
-                    ("파래 무침",41)]
+            menu = [("취나물 무침",56,"chan-1.jpeg"),
+                    ("미나리 나물",76,"chan-2.jpeg"),
+                    ("계란 장조림",100,"chan-3.jpeg"),
+                    ("파래 무침",41,"chan-4.jpeg")]
         }
         if seg_kind_of == "샐러드"{
-            menu = [("단호박 샐러드",346),
-                    ("야채 샐러드",206),
-                    ("닭가슴살 샐러드",289),
-                    ("연어샐러드",323)]
+            menu = [("단호박 샐러드",346,"sal-1.jpeg"),
+                    ("야채 샐러드",206,"sal-2.jpeg"),
+                    ("닭가슴살 샐러드",289,"sal-3.jpeg"),
+                    ("연어샐러드",323,"sal-4.jpeg")]
         }
         if seg_kind_of == "국"{
-            menu = [("북어국",67),
-                    ("계란국",54),
-                    ("미역국",55),
-                    ("콩나물국",40)]
+            menu = [("북어국",67,"guk-1.jpeg"),
+                    ("계란국",54,"guk-2.jpeg"),
+                    ("미역국",55,"guk-3.jpeg"),
+                    ("콩나물국",40,"guk-4.jpeg")]
         }
         if seg_kind_of == "디저트" {
-            menu = [("노슈가 고구마빵",120),
-                    ("저탄수 땅콩버터빵",140),
-                    ("단백질빵",60)]
+            menu = [("노슈가 고구마빵",120,"de-1.jpeg"),
+                    ("저탄수 땅콩버터빵",140,"de-2.jpeg"),
+                    ("단백질빵",60,"de-3.jpeg")]
             
         }
     }
@@ -68,7 +68,7 @@ class RecipyListTableViewController: UITableViewController {
 
         cell.menu_title.text = menu[indexPath.row].title
         cell.menu_kcal.text = menu[indexPath.row].kcal.description + "kcal"
-        
+        cell.menu_img.image = UIImage(named: menu[indexPath.row].img)
         
         return cell
     }

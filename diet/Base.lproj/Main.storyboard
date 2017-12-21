@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--내 정보-->
         <scene sceneID="rne-UE-Msu">
             <objects>
                 <viewController id="SiK-Dk-A6U" customClass="MypageViewController" customModule="diet" customModuleProvider="target" sceneMemberID="viewController">
@@ -192,7 +192,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ahI-9D-UmT" secondAttribute="trailing" constant="30" id="yOs-GC-lLW"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="MDd-yW-nJf"/>
+                    <tabBarItem key="tabBarItem" title="내 정보" image="yoga.png" id="MDd-yW-nJf"/>
                     <connections>
                         <outlet property="age" destination="ZfV-zi-s7M" id="QjG-C5-IwR"/>
                         <outlet property="bmi" destination="eOJ-Uv-C0R" id="rIy-Bh-eIw"/>
@@ -316,7 +316,7 @@
             </objects>
             <point key="canvasLocation" x="1078.125" y="-214.43661971830986"/>
         </scene>
-        <!--Favorite Table View Controller-->
+        <!--즐겨찾기-->
         <scene sceneID="EfM-pT-nUm">
             <objects>
                 <tableViewController id="j0E-s5-wKu" customClass="FavoriteTableViewController" customModule="diet" customModuleProvider="target" sceneMemberID="viewController">
@@ -373,7 +373,7 @@
                             <outlet property="delegate" destination="j0E-s5-wKu" id="V9N-UP-IjY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="7ys-e7-bbp"/>
+                    <navigationItem key="navigationItem" title="즐겨찾기" id="7ys-e7-bbp"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gaT-b7-WO9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -493,6 +493,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="detail" destination="jIZ-JU-Ifv" id="Seu-d1-EAh"/>
                         <outlet property="favoritBtn" destination="dHS-qy-aCw" id="O9D-UM-2z5"/>
                         <outlet property="mainImg" destination="HeV-x1-kxh" id="w78-zg-5Du"/>
                     </connections>
@@ -508,7 +509,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="CDm-MP-ctz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="WhD-xG-9SJ" kind="relationship" relationship="viewControllers" id="EvN-o7-gBF"/>
@@ -520,11 +522,13 @@
             </objects>
             <point key="canvasLocation" x="-726" y="220"/>
         </scene>
-        <!--Item 1-->
+        <!--음식 분류-->
         <scene sceneID="ChD-jP-7hd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WhD-xG-9SJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Hvw-2j-pzR"/>
+                    <tabBarItem key="tabBarItem" title="음식 분류" image="cooking.png" selectedImage="cooking.png" id="Hvw-2j-pzR">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XH5-eK-53e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -539,11 +543,11 @@
             </objects>
             <point key="canvasLocation" x="80.625" y="-214.43661971830986"/>
         </scene>
-        <!--Item-->
+        <!--즐겨찾기-->
         <scene sceneID="lee-If-Ocq">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HfP-EF-CPP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cxk-8C-jjC"/>
+                    <tabBarItem key="tabBarItem" title="즐겨찾기" image="love.png" id="cxk-8C-jjC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HMk-yJ-z90">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -560,14 +564,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cooking.png" width="32" height="32"/>
         <image name="dessert.png" width="512" height="512"/>
         <image name="health.jpeg" width="225" height="224"/>
+        <image name="love.png" width="32" height="32"/>
         <image name="salade.png" width="512" height="512"/>
         <image name="sidedish.png" width="256" height="256"/>
         <image name="soup.png" width="512" height="512"/>
+        <image name="yoga.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="nCG-hO-qZ7"/>
         <segue reference="y1S-8v-4Nf"/>
-        <segue reference="gid-rm-xop"/>
     </inferredMetricsTieBreakers>
 </document>
